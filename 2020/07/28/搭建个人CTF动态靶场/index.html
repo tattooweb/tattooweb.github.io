@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-xxxxxx-xx');
+  </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+  <script type="text/javascript">
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+
+  <!-- Baidu Push -->
+  
+  <script>
+    (function() {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc" />
+  <meta name="baidu-site-verification" content="PpzM9WxOJU" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="It&#39;s an IT blog..." />
+  <meta name="keyword" content="v-vincen,v-vincen,livemylife,IT  blog,Blog" />
+  <link rel="shortcut icon" href="/img/avatar/superman.jpg" />
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/beantech.min.css" />
+
+  <!-- Pygments Highlight CSS -->
+  
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
+
+
+  
+  <!-- wave start -->
+  <link rel="stylesheet" href="/css/wave.css" />
+  <!-- wave end -->
+  
+
+  
+  <!-- top start (article top hot config) -->
+  <link rel="stylesheet" href="/css/top.css" />
+  <!-- top end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/scroll.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+  <!-- viewer start (Picture preview) -->
+  <link rel="stylesheet" href="/css/viewer.min.css" />
+  <!-- viewer end -->
+  
+
+  
+  <!-- Search start -->
+  <link rel="stylesheet" href="/css/search.css" />
+  <!-- Search end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/themecolor.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+    href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="https://www.tattooo.top/2020/07/28/搭建个人CTF动态靶场/">
+  <title>
+    
+    搭建个人CTF动态靶场 - Tattoo&#39;s Blog
+    
+  </title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+<body ontouchstart="" class="body--home">
+	<!-- ThemeColor -->
+	
+	<!-- ThemeColor -->
+<!-- <div class="toggle" onclick="document.body.classList.toggle('body--dark')">Switch Color</div> -->
+
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons bright-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+
+	
+
+	<!-- Gitter -->
+	
+	<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+	
+
+	<!-- Navigation (contains search)-->
+	<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Live My Life</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          
+
+          
+          
+
+          
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/archive/">Archives</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/categories/">Categories</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/tags/">Tags</a>
+          </li>
+          
+          
+
+          
+          <li><a class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+
+<script>
+  // Drop Bootstarp low-performance Navbar
+  // Use customize navbar with high-quality material design animation
+  // in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+	<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    header.intro-header {
+       /*post*/
+        background-image: url('/img/header_img/lml_bg.jpg');
+      
+    }
+
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#CTF" title="CTF">CTF</a>
+              
+              <a class="tag" href="/tags/#docker" title="docker">docker</a>
+              
+              <a class="tag" href="/tags/#frp" title="frp">frp</a>
+              
+            </div>
+            <h1>搭建个人CTF动态靶场</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by Tattoo on
+              2020-07-28
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">8</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">1.8k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            <!-- WordCount end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+	<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>根据网上的教程，用CTFd配合ctf-whale插件搭建一个动态靶机，有些踩坑的地方记录下来</p>
+<p>官方教程<a href="https://www.zhaoj.in/read-6333.html" target="_blank" rel="noopener">https://www.zhaoj.in/read-6333.html</a></p>
+<h1 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h1><ul>
+<li><p>ubuntu18.04</p>
+</li>
+<li><p>docker19.03.12</p>
+</li>
+<li><p>docker-compose1.26.2</p>
+</li>
+</ul>
+<h1 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h1><h3 id="一、安装docker"><a href="#一、安装docker" class="headerlink" title="一、安装docker"></a>一、安装docker</h3><ul>
+<li>方法一：使用官方脚本自动安装</li>
+</ul>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL <span class="keyword">https</span>://<span class="built_in">get</span>.docker.com | bash -s docker <span class="comment">--mirror Aliyun</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>方法二：通过版本库安装（repository）</li>
+</ul>
+<figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">1. 更新系统包索引</span><br><span class="line">sudo apt-get update</span><br><span class="line"></span><br><span class="line">2. 添加HTTPS协议，允许apt从HTTPS安装软件包</span><br><span class="line">sudo apt-get install  apt-transport-https  ca-certificates curl  software-properties-common</span><br><span class="line"></span><br><span class="line">3. 添加Docker公共密钥 Docker 官方源</span><br><span class="line">curl -fsSL  https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add</span><br><span class="line"></span><br><span class="line">4. 设置版本库类型，软件版本包括三种： stable、edge、test</span><br><span class="line">sudo<span class="built_in"> add-apt-repository </span><span class="string">"deb [arch=amd64]  https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"</span> </span><br><span class="line"></span><br><span class="line">5. 安装最新版docker-ce</span><br><span class="line">sudo apt-get install docker-ce</span><br><span class="line"></span><br><span class="line">6. 设置开机自启动并启动docker</span><br><span class="line">sudo<span class="keyword"> system</span>ctl enable docker</span><br><span class="line">sudo<span class="keyword"> system</span>ctl start docker</span><br></pre></td></tr></table></figure>
+
+<h3 id="二、安装docker-compose"><a href="#二、安装docker-compose" class="headerlink" title="二、安装docker-compose"></a>二、安装docker-compose</h3><ul>
+<li>方法一：使用curl从github中安装</li>
+</ul>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 进入https:<span class="comment">//github.com/docker/compose/releases 查看最新版本，当前版本为1.26.2</span></span><br><span class="line">sudo curl -L https:<span class="comment">//github.com/docker/compose/releases/download/1.26.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose</span></span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> 设置权限</span><br><span class="line">sudo chmod +x /usr/local/bin/docker-compose</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span> 查看是否安装成功</span><br><span class="line">docker-compose --version</span><br><span class="line">出现docker-compose version <span class="number">1.26</span><span class="number">.2</span>即安装成功</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>方法二：使用pip安装</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip安装方法速度较方法一快，网上教程很多，详情不再赘述</span><br></pre></td></tr></table></figure>
+
+<h3 id="三、设置docker镜像加速"><a href="#三、设置docker镜像加速" class="headerlink" title="三、设置docker镜像加速"></a>三、设置docker镜像加速</h3><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 访问https:<span class="comment">//help.aliyun.com/document_detail/60750.html</span></span><br><span class="line"><span class="number">2.</span> 找到并进入容器镜像服务控制台</span><br><span class="line"><span class="number">3.</span> 按照操作文档配置镜像加速器，形如下图</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_ali.png" alt=""></p>
+<h3 id="四、安装启动frps"><a href="#四、安装启动frps" class="headerlink" title="四、安装启动frps"></a>四、安装启动frps</h3><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span></span><br><span class="line">wget https:<span class="string">//github.com/fatedier/frp/releases/download/v0.29.0/frp_0.29.0_linux_amd64.tar.gz</span></span><br><span class="line">tar -zxvf frp_0.29.0_linux_amd64.tar.gz</span><br><span class="line"><span class="keyword">cd</span> frp_0.29.0_linux_amd64</span><br><span class="line">sudo cp systemd/* <span class="string">/etc/systemd/system/</span></span><br><span class="line">sudo mkdir <span class="string">/etc/frp</span></span><br><span class="line">sudo cp frpc.ini  frps.ini <span class="string">/etc/frp/</span></span><br><span class="line">sudo cp frpc  frps <span class="string">/usr/bin/</span></span><br><span class="line">sudo chmod a+x <span class="string">/usr/bin/frpc</span> <span class="string">/usr/bin/frps</span></span><br><span class="line">sudo systemctl enable frps</span><br></pre></td></tr></table></figure>
+
+<p><strong>坑一：第一步的cd一定要执行，进入/root目录，否则后面编辑文件位置不正确</strong></p>
+<h4 id="编辑frps-ini"><a href="#编辑frps-ini" class="headerlink" title="编辑frps.ini"></a>编辑frps.ini</h4><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim <span class="regexp">/etc/</span>frp<span class="regexp">/frps.ini</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="frps-ini内容"><a href="#frps-ini内容" class="headerlink" title="frps.ini内容"></a>frps.ini内容</h4><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[common]</span></span><br><span class="line"><span class="attr">bind_port</span> = <span class="number">7897</span></span><br><span class="line"><span class="attr">bind_addr</span> = <span class="number">0.0</span>.<span class="number">0.0</span></span><br><span class="line"><span class="attr">token</span> = thisistoken</span><br></pre></td></tr></table></figure>
+
+<p><strong>使用python脚本随机生成一个token，需保证与后面frpc.ini里的token一致</strong></p>
+<h4 id="启动frps系统服务"><a href="#启动frps系统服务" class="headerlink" title="启动frps系统服务"></a>启动frps系统服务</h4><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl <span class="literal">start</span> frps</span><br></pre></td></tr></table></figure>
+
+<h3 id="五、创建网络并启动frpc容器并配置frpc-ini"><a href="#五、创建网络并启动frpc容器并配置frpc-ini" class="headerlink" title="五、创建网络并启动frpc容器并配置frpc.ini"></a>五、创建网络并启动frpc容器并配置frpc.ini</h3><h4 id="启动frpc容器"><a href="#启动frpc容器" class="headerlink" title="启动frpc容器"></a>启动frpc容器</h4><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo docker<span class="built_in"> network </span>create ctfd_frp-containers</span><br><span class="line">sudo docker <span class="builtin-name">run</span>  -d -v ~/frp_0.29.0_linux_amd64/frpc.ini:/etc/frp/frpc.ini <span class="attribute">--network</span>=<span class="string">"ctfd_frp-containers"</span> <span class="attribute">--restart</span>=always <span class="string">"glzjin/frp"</span></span><br></pre></td></tr></table></figure>
+
+<p>此时frpc容器处于不断重启状态，不需要在意，后面配置完状态将变为up</p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_2.png" alt=""></p>
+<h4 id="创建网络frpcadmin用于ctfd容器和frpc容器通信"><a href="#创建网络frpcadmin用于ctfd容器和frpc容器通信" class="headerlink" title="创建网络frpcadmin用于ctfd容器和frpc容器通信"></a>创建网络frpcadmin用于ctfd容器和frpc容器通信</h4><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> sudo docker network create frpcadmin </span><br><span class="line"><span class="number">2.</span> docker ps	<span class="comment">//查看frpcadmin容器ID</span></span><br><span class="line"><span class="number">3.</span> sudo docker network connect frpcadmin &lt;frpc容器ID&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="查看frpcadmin网络的连接情况并记录frpc容器的网络IP"><a href="#查看frpcadmin网络的连接情况并记录frpc容器的网络IP" class="headerlink" title="查看frpcadmin网络的连接情况并记录frpc容器的网络IP"></a>查看frpcadmin网络的连接情况并记录frpc容器的网络IP</h4><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker<span class="built_in"> network </span>inspect frpcadmin</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_3.png" alt=""></p>
+<p><strong>坑二：如果执行一次看不到IPv4Address的值，需要多连续执行几次就能看到，因为容器一直在重启</strong></p>
+<h4 id="编辑frpc-ini"><a href="#编辑frpc-ini" class="headerlink" title="编辑frpc.ini"></a>编辑frpc.ini</h4><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/frp_0<span class="number">.29</span><span class="number">.0</span>_linux_amd64/frpc.ini</span><br></pre></td></tr></table></figure>
+
+<h4 id="frpc-ini内容"><a href="#frpc-ini内容" class="headerlink" title="frpc.ini内容"></a>frpc.ini内容</h4><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[common]</span></span><br><span class="line"><span class="attr">server_addr</span> = <span class="number">172.17</span>.<span class="number">0.1</span>	//ifconfig之后查看docker0的ip</span><br><span class="line"><span class="attr">server_port</span> = <span class="number">7897</span></span><br><span class="line"><span class="attr">token</span> = thisistoken		//与前面frps.ini的token一致</span><br><span class="line"><span class="attr">admin_addr</span> = <span class="number">172.22</span>.<span class="number">0.2</span>		//这里填写frpc容器的网络IP，即IPv4Address的值，因人而异，不要一摸一样填</span><br><span class="line"><span class="attr">admin_port</span> = <span class="number">7400</span></span><br><span class="line"><span class="attr">log_file</span> = ./frps.log</span><br></pre></td></tr></table></figure>
+
+<h4 id="编辑完重启frpc容器"><a href="#编辑完重启frpc容器" class="headerlink" title="编辑完重启frpc容器"></a>编辑完重启frpc容器</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker restart <span class="tag">&lt;<span class="name">frpc容器的ID</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_4.png" alt=""></p>
+<p>此时frpc容器已经处于up状态</p>
+<h3 id="六、安装靶场与插件"><a href="#六、安装靶场与插件" class="headerlink" title="六、安装靶场与插件"></a>六、安装靶场与插件</h3><h4 id="下载靶场与插件"><a href="#下载靶场与插件" class="headerlink" title="下载靶场与插件"></a>下载靶场与插件</h4><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="string">//github.com/CTFd/CTFd.git</span></span><br><span class="line"><span class="keyword">cd</span> CTFd/</span><br><span class="line">git reset 6c5c63d667a17aec159c8e26ea53dccfbc4d0fa3 <span class="params">--hard</span>	<span class="string">//</span>回滚到当前教程适合的版本</span><br><span class="line"><span class="keyword">cd</span> CTFd/plugins		<span class="string">//</span>打开ctfd插件目录</span><br><span class="line">git clone https:<span class="string">//github.com/glzjin/CTFd-Whale.git</span> ctfd-whale</span><br><span class="line"><span class="keyword">cd</span> ctfd-whale</span><br><span class="line">git reset 5b32f457e9f56ee9b2b29495f4b3b118be3c57bd <span class="params">--hard</span>	<span class="string">//</span>回滚到当前教程适合的版本</span><br><span class="line"><span class="keyword">cd</span> <span class="string">../../..</span>		<span class="string">//</span>返回CTFd主目录</span><br><span class="line">vim docker-compose.yml</span><br></pre></td></tr></table></figure>
+
+<p><strong>坑三：这里还需要更改一个css的引用地址，之前搭建完后访问非常慢，原因在于某个css的引用地址访问时极慢，如图更改</strong></p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_5.png" alt=""></p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_6.png" alt=""></p>
+<h4 id="配置docker-compose-yml"><a href="#配置docker-compose-yml" class="headerlink" title="配置docker-compose.yml"></a>配置docker-compose.yml</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">version</span>: '2.2'</span><br><span class="line"></span><br><span class="line"><span class="attribute">services:</span></span><br><span class="line">  ctfd:</span><br><span class="line">    build: .</span><br><span class="line">    user: root</span><br><span class="line">    restart: always</span><br><span class="line">    ports:</span><br><span class="line">      - "8000:8000"</span><br><span class="line">    environment:</span><br><span class="line">      - UPLOAD_FOLDER=/var/uploads</span><br><span class="line">      - DATABASE_URL=mysql+pymysql://root:ctfd@db/ctfd</span><br><span class="line">      - REDIS_URL=redis://cache:6379</span><br><span class="line">      - WORKERS=1</span><br><span class="line">      - LOG_FOLDER=/var/log/CTFd</span><br><span class="line">      - ACCESS_LOG=-</span><br><span class="line">      - ERROR_LOG=-</span><br><span class="line">    volumes:</span><br><span class="line">      - .data/CTFd/logs:/var/log/CTFd</span><br><span class="line">      - .data/CTFd/uploads:/var/uploads</span><br><span class="line">      - .:/opt/CTFd:ro</span><br><span class="line">      - /var/run/docker.sock:/var/run/docker.sock #添加这句即可，别的基本按照官方的不用动</span><br><span class="line">    depends_on:</span><br><span class="line">      - db</span><br><span class="line">    networks:</span><br><span class="line">        default:</span><br><span class="line">        internal:</span><br><span class="line"></span><br><span class="line">  db:</span><br><span class="line">    image: mariadb:10.4.12 #这里改成10.4.12，10.4.13会出错</span><br><span class="line">    restart: always</span><br><span class="line">    environment:</span><br><span class="line">      - MYSQL_ROOT_PASSWORD=ctfd</span><br><span class="line">      - MYSQL_USER=ctfd</span><br><span class="line">      - MYSQL_PASSWORD=ctfd</span><br><span class="line">      - MYSQL_DATABASE=ctfd</span><br><span class="line">    volumes:</span><br><span class="line">      - .data/mysql:/var/lib/mysql</span><br><span class="line">    networks:</span><br><span class="line">        internal:</span><br><span class="line">    # This command is required to set important mariadb defaults</span><br><span class="line">    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]</span><br><span class="line"></span><br><span class="line">  cache:</span><br><span class="line">    image: redis:4</span><br><span class="line">    restart: always</span><br><span class="line">    volumes:</span><br><span class="line">    - .data/redis:/data</span><br><span class="line">    networks:</span><br><span class="line">        internal:</span><br><span class="line"></span><br><span class="line"><span class="attribute">networks:</span></span><br><span class="line">    default:</span><br><span class="line">    internal:</span><br><span class="line">        internal: true</span><br></pre></td></tr></table></figure>
+
+<h4 id="修改Dockerfile"><a href="#修改Dockerfile" class="headerlink" title="修改Dockerfile"></a>修改Dockerfile</h4><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> python:<span class="number">2.7</span>-alpine</span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> sed -i <span class="string">'s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g'</span> /etc/apk/repositories &amp;&amp;\</span></span><br><span class="line"><span class="bash">    apk update &amp;&amp; \</span></span><br><span class="line"><span class="bash">    apk add python python-dev linux-headers libffi-dev gcc make musl-dev py-pip mysql-client git openssl-dev</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> adduser -D -u 1001 -s /bin/bash ctfd</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> /opt/CTFd</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> mkdir -p /opt/CTFd /var/<span class="built_in">log</span>/CTFd /var/uploads</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> pip config <span class="built_in">set</span> global.index-url https://pypi.doubanio.com/simple</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> pip config <span class="built_in">set</span> install.trusted-host pypi.doubanio.com</span></span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> requirements.txt .</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> pip install -r requirements.txt -i  https://pypi.doubanio.com/simple</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> . /opt/CTFd</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> <span class="keyword">for</span> d <span class="keyword">in</span> CTFd/plugins/*; <span class="keyword">do</span> \</span></span><br><span class="line"><span class="bash">      <span class="keyword">if</span> [ -f <span class="string">"<span class="variable">$d</span>/requirements.txt"</span> ]; <span class="keyword">then</span> \</span></span><br><span class="line"><span class="bash">        pip install -r <span class="variable">$d</span>/requirements.txt -i  https://pypi.doubanio.com/simple; \</span></span><br><span class="line"><span class="bash">      <span class="keyword">fi</span>; \</span></span><br><span class="line"><span class="bash">    <span class="keyword">done</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> chmod +x /opt/CTFd/docker-entrypoint.sh</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> chown -R 1001:1001 /opt/CTFd</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> chown -R 1001:1001 /var/<span class="built_in">log</span>/CTFd /var/uploads</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">USER</span> <span class="number">1001</span></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">8000</span></span><br><span class="line"><span class="keyword">ENTRYPOINT</span><span class="bash"> [<span class="string">"/opt/CTFd/docker-entrypoint.sh"</span>]</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="修改requirements-txt"><a href="#修改requirements-txt" class="headerlink" title="修改requirements.txt"></a>修改requirements.txt</h4><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在最后添加一行</span><br><span class="line">banal==<span class="number">0.4</span><span class="number">.2</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="构建并启动镜像"><a href="#构建并启动镜像" class="headerlink" title="构建并启动镜像"></a>构建并启动镜像</h4><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">docker</span>-compose <span class="keyword">build</span></span><br><span class="line"><span class="keyword">docker-compose </span>up -d</span><br></pre></td></tr></table></figure>
+
+<h4 id="将ctfd容器连接frpcadmin网络"><a href="#将ctfd容器连接frpcadmin网络" class="headerlink" title="将ctfd容器连接frpcadmin网络"></a>将ctfd容器连接frpcadmin网络</h4><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker<span class="built_in"> network </span>connect frpcadmin &lt;ctfd容器ID&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="访问IP-8000即可打开CTFd"><a href="#访问IP-8000即可打开CTFd" class="headerlink" title="访问IP:8000即可打开CTFd"></a>访问IP:8000即可打开CTFd</h4><p>第一次进入会要求设置管理员账号密码，按需设置即可</p>
+<p>登录后进入管理页面选择插件</p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_7.png" alt=""></p>
+<p>填写相关参数</p>
+<p><code>Frp API IP</code>填frpc容器网络的IP</p>
+<p><code>domain</code>没有就填None</p>
+<p><code>Frp Direct IP Address</code>填自己的公网IP</p>
+<p><code>template</code>里面写上frpc.ini的内容，其他照着填就行</p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_9.png" alt=""></p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_10.png" alt=""></p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_11.png" alt=""></p>
+<h4 id="至此，CTFd动态靶场已经搭建完成"><a href="#至此，CTFd动态靶场已经搭建完成" class="headerlink" title="至此，CTFd动态靶场已经搭建完成"></a>至此，CTFd动态靶场已经搭建完成</h4><h3 id="七、创建题目"><a href="#七、创建题目" class="headerlink" title="七、创建题目"></a>七、创建题目</h3><h4 id="配置参数"><a href="#配置参数" class="headerlink" title="配置参数"></a>配置参数</h4><p><code>Challenge Type</code>题目类型选择dynamic_docker</p>
+<p><code>Name</code>题目名字</p>
+<p><code>Category</code>题目分类</p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_12.png" alt=""></p>
+<p><code>Initial Value</code>初始分值</p>
+<p><code>Decay Value</code>递减分值</p>
+<p><code>Minimum Value</code>最小分值</p>
+<p><code>Docker Image</code>支持动态flag的镜像</p>
+<p><code>Frp Http Port</code>frps http开放的端口</p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_13.png" alt=""></p>
+<p><code>Frp Redirect Type</code>没有域名选择Direct</p>
+<p><code>Frp Redirect Port</code>转发到靶机容器的端口</p>
+<p><code>Score Type</code>是否启用动态分数</p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_14.png" alt=""></p>
+<h4 id="尝试启动靶机"><a href="#尝试启动靶机" class="headerlink" title="尝试启动靶机"></a>尝试启动靶机</h4><p>第一次启动会比较慢，因为docker在pull镜像，最好先pull再创建题目，这样启动题目更快</p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_15.png" alt=""></p>
+<p>启动成功</p>
+<p><img src="https://tattooweb_admin.gitee.io/pic/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BACTF%E5%8A%A8%E6%80%81%E9%9D%B6%E5%9C%BA_16.png" alt=""></p>
+<h3 id="八、使用docker-compose一站式部署靶场、容器与网络"><a href="#八、使用docker-compose一站式部署靶场、容器与网络" class="headerlink" title="八、使用docker-compose一站式部署靶场、容器与网络"></a>八、使用docker-compose一站式部署靶场、容器与网络</h3><p>以下docker-compose.yml的功能涵盖了上述步骤，更方便快捷，一条命令即可部署CTFd</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">version</span>: '2'</span><br><span class="line"></span><br><span class="line"><span class="attribute">services:</span></span><br><span class="line">  ctfd:</span><br><span class="line">    build: .</span><br><span class="line">    user: root</span><br><span class="line">    restart: always</span><br><span class="line">    ports:</span><br><span class="line">      - "8000:8000" #你自己的</span><br><span class="line">    environment:</span><br><span class="line">      - UPLOAD_FOLDER=/var/uploads</span><br><span class="line">      - DATABASE_URL=mysql+pymysql://root:ctfd@db/ctfd</span><br><span class="line">      - REDIS_URL=redis://cache:6379</span><br><span class="line">      - WORKERS=1</span><br><span class="line">      - LOG_FOLDER=/var/log/CTFd</span><br><span class="line">      - ACCESS_LOG=-</span><br><span class="line">      - ERROR_LOG=-</span><br><span class="line">    volumes:</span><br><span class="line">      - .data/CTFd/logs:/var/log/CTFd</span><br><span class="line">      - .data/CTFd/uploads:/var/uploads</span><br><span class="line">      - .:/opt/CTFd:ro</span><br><span class="line">      - /var/run/docker.sock:/var/run/docker.sock #添加这句即可，别的基本按照官方的不用动</span><br><span class="line">    depends_on:</span><br><span class="line">      - db</span><br><span class="line">    networks:</span><br><span class="line">        default:</span><br><span class="line">        internal:</span><br><span class="line">        frpcadmin:</span><br><span class="line">            ipv4_address: 172.22.0.3        </span><br><span class="line"></span><br><span class="line">  db:</span><br><span class="line">    image: mariadb:10.4.12</span><br><span class="line">    restart: always</span><br><span class="line">    environment:</span><br><span class="line">      - MYSQL_ROOT_PASSWORD=ctfd</span><br><span class="line">      - MYSQL_USER=ctfd</span><br><span class="line">      - MYSQL_PASSWORD=ctfd</span><br><span class="line">      - MYSQL_DATABASE=ctfd</span><br><span class="line">    volumes:</span><br><span class="line">      - .data/mysql:/var/lib/mysql</span><br><span class="line">    networks:</span><br><span class="line">        internal:</span><br><span class="line">       </span><br><span class="line">    # This command is required to set important mariadb defaults</span><br><span class="line">    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]</span><br><span class="line"></span><br><span class="line">  cache:</span><br><span class="line">    image: redis:4</span><br><span class="line">    restart: always</span><br><span class="line">    volumes:</span><br><span class="line">    - .data/redis:/data</span><br><span class="line">    networks:</span><br><span class="line">        internal:</span><br><span class="line">  frpc:</span><br><span class="line">    image: glzjin/frp:latest</span><br><span class="line">    restart: always</span><br><span class="line">    volumes:</span><br><span class="line">      - ~/frp_0.29.0_linux_amd64/frpc.ini:/etc/frp/frpc.ini</span><br><span class="line">    networks:</span><br><span class="line">        frpcadmin:</span><br><span class="line">            ipv4_address: 172.22.0.2</span><br><span class="line">        frp-containers:</span><br><span class="line"><span class="attribute">networks:</span></span><br><span class="line">    default:</span><br><span class="line">    internal:</span><br><span class="line">        internal: true</span><br><span class="line">    frpcadmin:</span><br><span class="line">        driver: bridge</span><br><span class="line">        internal: true</span><br><span class="line">        ipam:</span><br><span class="line">            config:</span><br><span class="line">                - subnet: 172.22.0.0/16</span><br><span class="line">    frp-containers:</span><br><span class="line">        driver: bridge</span><br><span class="line">        ipam:</span><br><span class="line">            config:</span><br><span class="line">                - subnet: 172.21.0.0/16</span><br></pre></td></tr></table></figure>
+
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2020/08/18/CSRF攻击技术浅析/" data-toggle="tooltip" data-placement="top" title="CSRF攻击技术浅析">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/2020/05/15/绕过uac提权/" data-toggle="tooltip" data-placement="top" title="绕过uac提权">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <div class="tip">
+          <p>
+            If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+          </p>
+        </div>
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=搭建个人CTF动态靶场&body=Hi,I found this website and thought you might like it https://www.tattooo.top/2020/07/28/搭建个人CTF动态靶场/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+
+
+<!-- 2. gitment comment -->
+
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#前言"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">前言</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#搭建环境"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">搭建环境</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#搭建步骤"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">搭建步骤</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#一、安装docker"><span class="toc-nav-number">3.0.1.</span> <span class="toc-nav-text">一、安装docker</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#二、安装docker-compose"><span class="toc-nav-number">3.0.2.</span> <span class="toc-nav-text">二、安装docker-compose</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#三、设置docker镜像加速"><span class="toc-nav-number">3.0.3.</span> <span class="toc-nav-text">三、设置docker镜像加速</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#四、安装启动frps"><span class="toc-nav-number">3.0.4.</span> <span class="toc-nav-text">四、安装启动frps</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#编辑frps-ini"><span class="toc-nav-number">3.0.4.1.</span> <span class="toc-nav-text">编辑frps.ini</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#frps-ini内容"><span class="toc-nav-number">3.0.4.2.</span> <span class="toc-nav-text">frps.ini内容</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#启动frps系统服务"><span class="toc-nav-number">3.0.4.3.</span> <span class="toc-nav-text">启动frps系统服务</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#五、创建网络并启动frpc容器并配置frpc-ini"><span class="toc-nav-number">3.0.5.</span> <span class="toc-nav-text">五、创建网络并启动frpc容器并配置frpc.ini</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#启动frpc容器"><span class="toc-nav-number">3.0.5.1.</span> <span class="toc-nav-text">启动frpc容器</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#创建网络frpcadmin用于ctfd容器和frpc容器通信"><span class="toc-nav-number">3.0.5.2.</span> <span class="toc-nav-text">创建网络frpcadmin用于ctfd容器和frpc容器通信</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#查看frpcadmin网络的连接情况并记录frpc容器的网络IP"><span class="toc-nav-number">3.0.5.3.</span> <span class="toc-nav-text">查看frpcadmin网络的连接情况并记录frpc容器的网络IP</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#编辑frpc-ini"><span class="toc-nav-number">3.0.5.4.</span> <span class="toc-nav-text">编辑frpc.ini</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#frpc-ini内容"><span class="toc-nav-number">3.0.5.5.</span> <span class="toc-nav-text">frpc.ini内容</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#编辑完重启frpc容器"><span class="toc-nav-number">3.0.5.6.</span> <span class="toc-nav-text">编辑完重启frpc容器</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#六、安装靶场与插件"><span class="toc-nav-number">3.0.6.</span> <span class="toc-nav-text">六、安装靶场与插件</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#下载靶场与插件"><span class="toc-nav-number">3.0.6.1.</span> <span class="toc-nav-text">下载靶场与插件</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#配置docker-compose-yml"><span class="toc-nav-number">3.0.6.2.</span> <span class="toc-nav-text">配置docker-compose.yml</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#修改Dockerfile"><span class="toc-nav-number">3.0.6.3.</span> <span class="toc-nav-text">修改Dockerfile</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#修改requirements-txt"><span class="toc-nav-number">3.0.6.4.</span> <span class="toc-nav-text">修改requirements.txt</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#构建并启动镜像"><span class="toc-nav-number">3.0.6.5.</span> <span class="toc-nav-text">构建并启动镜像</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#将ctfd容器连接frpcadmin网络"><span class="toc-nav-number">3.0.6.6.</span> <span class="toc-nav-text">将ctfd容器连接frpcadmin网络</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#访问IP-8000即可打开CTFd"><span class="toc-nav-number">3.0.6.7.</span> <span class="toc-nav-text">访问IP:8000即可打开CTFd</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#至此，CTFd动态靶场已经搭建完成"><span class="toc-nav-number">3.0.6.8.</span> <span class="toc-nav-text">至此，CTFd动态靶场已经搭建完成</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#七、创建题目"><span class="toc-nav-number">3.0.7.</span> <span class="toc-nav-text">七、创建题目</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#配置参数"><span class="toc-nav-number">3.0.7.1.</span> <span class="toc-nav-text">配置参数</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#尝试启动靶机"><span class="toc-nav-number">3.0.7.2.</span> <span class="toc-nav-text">尝试启动靶机</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#八、使用docker-compose一站式部署靶场、容器与网络"><span class="toc-nav-number">3.0.8.</span> <span class="toc-nav-text">八、使用docker-compose一站式部署靶场、容器与网络</span></a></li></ol></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#CTF" title="CTF">CTF</a>
+            
+            <a class="tag" href="/tags/#docker" title="docker">docker</a>
+            
+            <a class="tag" href="/tags/#frp" title="frp">frp</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://www.getflag.cn/" target="_blank">kawhi</a>
+          </li>
+          
+          <li>
+            <a href="https://www.plasf.cn" target="_blank">Xiao Leung</a>
+          </li>
+          
+          <li>
+            <a href="https://www.redmango.top" target="_blank">HhhM</a>
+          </li>
+          
+          <li>
+            <a href="https://legoc.github.io" target="_blank">lego</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+	<!-- Footer (contains ThemeColor、viewer) -->
+	<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/tattooweb">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          Tattoo
+          2020
+          <br>
+          Theme by
+          <a href="http://beantech.org" target="_blank" rel="noopener">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a href="https://v-vincen.life/" target="_blank" rel="noopener">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="/js/hux-blog.min.js"></script>
+
+<!-- catalog -->
+<script type="text/javascript" async="true" src="/js/catalog.js?v=1.0.0"></script>
+
+<!-- totop(rocket) -->
+<script type="text/javascript" async="true" src="/js/totop.js?v=1.0.0"></script>
+
+<!-- Busuanzi JavaScript -->
+<script type="text/javascript" async="true" src="/js/busuanzi.pure.mini.js"></script>
+
+
+  <!-- Scroll start -->
+  <script type="text/javascript" src="/js/scroll.js"></script>
+  <!-- Scroll end -->
+
+
+
+  <!-- ThemeColor start -->
+  <script type="text/javascript" src="/js/themecolor.js"></script>
+  <!-- ThemeColor end -->
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  <script type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+  <script type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){ hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if($('#tag_cloud').length !== 0){ async("https://www.tattooo.top/js/jquery.tagcloud.js",function(){ $.fn.tagcloud.defaults = { //size: {start: 1, end: 1, unit: 'em'}, color: {start:
+'#bbbbee', end: '#0085a1'}, }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+	<!-- Search -->
+	
+	<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/ziploader.js"></script>
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+	
+
+	<!-- Image to hack wechat -->
+	<!-- <img src="https://www.tattooo.top/img/icon_wechat.png" width="0" height="0" /> -->
+	<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
